@@ -1,0 +1,45 @@
+//头部的布局技巧有点像圣杯布局,但是没有利用负margin,左右固定宽度且float左右,
+//中间middle不使用float,设置左右margin
+//圣杯是为了将middle写在前面,优先加载中间内容,此处没有必要,所以不需要使用负margin
+//
+
+#home-header {
+  background-color: rgb(233, 32, 61);
+  padding: 10px;
+
+  * {
+    color: #fff;
+    line-height: 1;
+    font-size: 16px;
+  }
+}
+.home-header-left {
+  width:60px;
+  margin: 5px 0
+}
+.home-header-right {
+  margin: 7px 0 4px 0;
+  width:30px;
+  text-align: right;
+  i {
+    margin-top: 10px;
+  }
+}
+.home-header-middle {
+  margin:0 30px 0 60px;
+  width:auto;
+  .search-container {
+    padding:5px;
+    background-color: #fff;
+    border-radius: 15px;
+    //overflow: hidden;
+    input {
+      font-size: 14px !important;
+      font-weight: normal;
+    }
+    i {
+      vertical-align: middle;
+      color: #ccc !important;
+    }
+  }
+}

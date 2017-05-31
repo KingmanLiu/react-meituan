@@ -4,8 +4,8 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { connect } from 'react-redux'
-import { fetchAd } from '../../../services/HomeAds'
-import HomeAd from '../../components/HomeAd'
+import { fetchAd } from '../../../services/HomeService'
+import HomeAd from '../../../components/HomeAd'
 class Home extends React.Component {
     constructor(props, context) {
         super(props, context);
@@ -34,8 +34,7 @@ class Home extends React.Component {
                         AdList
                     })
                 }
-            }
-        )
+            })
     }
 
 

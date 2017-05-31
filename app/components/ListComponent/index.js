@@ -21,17 +21,16 @@ class List extends React.Component {
                             </div>
 
 
-                            <div className="item-right float-left">
-                                <div className="aaa">ddddd</div>
-                                {/*<div className="item-right-fist-row clear-fix">*/}
-                                    {/*<h3 className="float-left">{item.title}</h3>*/}
-                                    {/*<span className="float-right">{item.distance}</span>*/}
-                                {/*</div>*/}
-                                {/*<p className="subtitle">{item.subTitle}</p>*/}
-                                {/*<div >*/}
-                                    {/*<span className="price">¥{item.price}</span>*/}
-                                    {/*<span>已售100</span>*/}
-                                {/*</div>*/}
+                            <div className="item-right">
+                                <div className="clear-fix title-wrapper">
+                                    <h3 className="float-left title">{item.title}</h3>
+                                    <span className="float-right distance">{item.distance}</span>
+                                </div>
+                                <p className="subtitle">{item.subTitle}</p>
+                                <div>
+                                    <span className="price">¥{item.price}</span>
+                                    <span className="float-right">已售100</span>
+                                </div>
 
                             </div>
                         </div>
